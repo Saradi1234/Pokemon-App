@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(45deg, blue, rgb(122, 190, 205)); */
+  /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 0, 0.5),
+      rgba(136, 255, 0, 0.5)), url("./images/wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .logo img {
+  width: clamp(300px, 15%, 400px);
+  display: flex;
+  margin: 10px auto;
+}
+
+.container .btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group button {
+  width: 100px;
+  padding: 0.5rem 0;
+  border: none;
+  outline: none;
+  background-color: rgb(240, 213, 114);
+  color: #fff;
+  border-radius: 8px;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-group button:hover {
+  background-color: #fff;
+  color: rgb(240, 213, 114);
+}
+
+.pokemon-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  padding: 0 0 2rem 5rem;
+}
+
+.card {
+  width: 200px;
+  height: 190px;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: #f3f3f3;
+  color: #777;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.modal-container {
+  color: black;
+  background-color: #fff;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-container h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.modal-container img {
+  margin: 1rem;
+  height: 150px;
+  display: flex;
+  margin: 20px auto;
+}
+
+.ability {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.ability .group {
+  padding: 1rem;
+  background-color: rgb(243, 195, 38);
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  margin: 6px;
+}
+
+.states {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background-color: #a8eb12;
+}
+
+.states h3 {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
