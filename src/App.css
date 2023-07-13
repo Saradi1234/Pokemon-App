@@ -71,6 +71,14 @@ body {
   width: 100%;
 }
 
+.loading {
+  font-size: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .card h2 {
   text-align: center;
 }

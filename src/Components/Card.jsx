@@ -5,7 +5,7 @@ const Card = ({ pokeData, loading, infoPokemon, setOpenModal }) => {
     return (
         <>
             {
-                loading ? <h1>Loading...</h1> :
+                loading ? <h1 className='loading'>Loading...</h1> :
                     pokeData.map((item) => {
                         return (
                             <div className='card' key={item.id}
